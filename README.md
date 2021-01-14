@@ -1,5 +1,5 @@
 # SvcEnum
-Enumerate Windows Services With Low Privileges
+Enumerate Windows Services.
 
 ## Compile
 Use Visual Studio and add System.ServiceProcess as a reference or use [mcs](https://linux.die.net/man/1/mcs) via:
