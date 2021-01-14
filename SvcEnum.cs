@@ -29,7 +29,9 @@ public class SvcEnum
 
     public static void GetSvc(bool canStop)
     {
-        ServiceController[] services = ServiceController.GetServices();
+        ServiceController[] services = { };
+        try { services = ServiceController.GetServices(); }
+        catch (Exception e) { Console.WriteLine("[!] " + e.Message); }
         foreach (ServiceController service in services)
         {
             if (canStop == true)
